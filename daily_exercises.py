@@ -53,15 +53,39 @@ import random
 # for x in range(user_num + 1):
 #     print(number_stars * x)
 
-# number seven
-user_int = (input("Please enter a number"))
-while True:
-    if user_int = "q":
-
-
+# # number seven
+# tries = 0
+# total = 0
+# product = 1
+# while True:
+#     user_int = (input("Please enter a number"))
+#     if user_int == "q":
+#         break
+#     user_int = int(user_int)
+#     tries += 1
+#     total = total + user_int
+#     product = product * user_int
+#
+# print("The average is of your numbers is", total / tries, "and the product is", product)
 
 
 # number eight
+steps = 0
+user_num = int(input("Enter a number"))
+while user_num != 1:
+    if user_num % 2 == 0:
+        even = user_num / 2
+        user_num = even
+        print(user_num, "->", user_num / 2, "=", even)
+    else:
+        odd = user_num * 3 + 1
+        user_num = odd
+        print(user_num, "->", user_num * 3 + 1, "=", odd)
+    steps += 1
+print("It took you", steps, "steps to get to one")
+
+
+
 
 
 
